@@ -52,7 +52,7 @@ input, button { outline: none !important; box-shadow: none;  }
 }
 
 .list-inline li {
-    margin: 0 10px;
+    margin: 0 7px;
 }
 
 .topBar {
@@ -92,7 +92,7 @@ input, button { outline: none !important; box-shadow: none;  }
 }
 
 .topBx ul li a {
-    font-size: 14px;
+    font-size: 13px;
     color: #fff;
 }
 .contactList li a img {
@@ -309,7 +309,9 @@ section.banner video {
 .redGrdBg .owl-item.active {
     transform: scale(0.95);
 }
-
+.redGrdBg .owl-item.active{
+    filter: grayscale(1);
+}
 .redGrdBg .owl-item.active.center + .owl-item.active, .redGrdBg .owl-item.active + .owl-item.active{
     transform: scale(1.15);
 }
@@ -319,6 +321,7 @@ section.banner video {
 .redGrdBg .owl-item.active  + .owl-item.active.center {
     transform: scale(1.4);
     z-index: 9;
+    filter: grayscale(0);
 }
 section.customSec.redGrdBg .owl-carousel .owl-stage-outer {
     padding: 75px 0;
