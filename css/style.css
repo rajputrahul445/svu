@@ -579,12 +579,12 @@ section.customSec.redGrdBg .owl-carousel .owl-stage-outer {
     padding: 10px;
 }
 .brand img {
-    height: 55px;
+    /* height: 55px; */
     width: auto !important;
     object-fit: contain;
 }
 .latestEventBx img {
-    width: 100%;
+    width: 100% !important;
 }
 
 .latestEventBx h3 {

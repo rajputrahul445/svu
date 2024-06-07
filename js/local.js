@@ -102,7 +102,7 @@ $(document).ready(function(){
     });
     $('.brandSlider').owlCarousel({
         loop:true,
-        margin:20,
+        margin:0,
         nav:false,
         center: false,
         autoplay:true,
