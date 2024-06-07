@@ -562,11 +562,10 @@ section.customSec.quickLinks {
 }
 .testimonialWrp {
     width: 60%;
-    background: url(../images/quote-bg.png) 0 0 no-repeat;
+    /* background: url(../images/quote-bg.png) 0 0 no-repeat; */
     background-size: cover;
-    padding: 50px;
+    padding: 50px 15px;
 }
-img {}
 
 .testimonialImg > img:not(.quoteCircle) {
     width: 160px;
@@ -587,7 +586,10 @@ img.quoteCircle {
     left: 140px;
     width: 40px !important;
 }
-
+.testimonial{
+    background: url(../images/testi-bg.png) 0 0 no-repeat;
+    background-size: cover;
+}
 .testimonialImg h3 {
     font-size: 40px;
     color: #FEDD03;
@@ -645,7 +647,7 @@ footer.footer {
 }
 
 .footerBx {
-    padding: 55px 20px;
+    padding: 100px 20px 50px;
     border-left: solid 1px #303030;
     color: #fff;
     width: 22%;
@@ -663,6 +665,7 @@ footer.footer {
 .footerBx.footerLogo {
     border-left: none;
     width: 34%;
+    padding-top: 55px;
 }
 
 .footerLogo h4 {
