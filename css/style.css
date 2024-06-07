@@ -259,34 +259,37 @@ section.banner video {
 
 .aboutBx {
     position: relative;
+    border-radius: 10px;
+    overflow: hidden;
 }
 
 .aboutBx > img {
-    width: 100%;
+    width: 100% !important;
     border-radius: 10px;
 }
 
 .aboutContent {
     position: absolute;
     left: 0;
-    bottom: 0;
+    bottom: -100px;
     width: 100%;
     padding: 20px;
     background: #ebe6dddb;
     transition: all 500ms ease;
     border-radius: 0 0 10px 10px;
+
 }
 .aboutContent img{
     height: 40px;
 }
 .aboutContent p{
     margin: 20px 0 0;
-    display: none;
     font-size: 14px;
     color: #763140;
 }
-.aboutBx:hover .aboutContent p{
-    display: block;
+.aboutBx:hover .aboutContent{
+    bottom: 0;
+    transition: all 500ms ease;
 }
 /* .aboutBx:hover .aboutContent {
     padding-bottom: 50px;
