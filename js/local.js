@@ -192,3 +192,45 @@ $(window).scroll(function() {
     }
 });
 
+const facultySwiper = new Swiper(".facultySwiper", {
+    grabCursor:true,centeredSlides:true,loop:true,slidesPerView:1.5,speed:1000,autoplay: {delay:3000,disableOnInteraction:false},
+    effect:"coverflow",coverflowEffect:{rotate:4,stretch:0,depth:50,modifier:5,slideShadows:true},
+    navigation: {nextEl:".facultynaviNext",prevEl:".facultynaviPrev"},
+    keyboard: {enabled:true},
+    breakpoints: {
+        640: {slidesPerView:2.5},
+        768: {slidesPerView:2.515},
+        1024: {slidesPerView:3.54},
+        1280: {slidesPerView:3.59},
+        1536: {slidesPerView:3.635}
+    },
+});
+
+/*  Counters  */
+$(window).scroll(function() {
+    $('.countNo').each(function() {
+        oTop = $(this).offset().top - window.innerHeight;
+        if ($(window).scrollTop() > oTop) {
+            var $this = $(this),
+                countTo = $this.attr('data-count');
+            $({countNum: $this.text()}).animate({countNum: countTo},
+                {duration:2000,easing:'swing',
+                step: function() {$this.text(Math.floor(this.countNum));},
+                complete: function() {$this.text(this.countNum);}
+            });
+        }
+    });
+});
+
+const colgSwiper_1 = new Swiper('.colgSwiper_1', {
+    speed:1500,loop:true,slidesPerView:1,autoplay:{delay:3000,disableOnInteraction:false},
+});
+const colgSwiper_2 = new Swiper('.colgSwiper_2', {
+    speed:1500,loop:true,slidesPerView:1,autoplay:{delay:4000,disableOnInteraction:false},direction: "vertical",
+});
+const colgSwiper_3 = new Swiper('.colgSwiper_3', {
+    speed:1500,loop:true,slidesPerView:1,autoplay:{delay:5000,disableOnInteraction:false},
+});
+const colgSwiper_4 = new Swiper('.colgSwiper_4', {
+    speed:1500,loop:true,slidesPerView:1,autoplay:{delay:6000,disableOnInteraction:false,reverseDirection:true},direction: "vertical",
+});

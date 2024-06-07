@@ -196,15 +196,38 @@ input, button { outline: none !important; box-shadow: none;  }
     position: absolute;
     top: 0;
     padding: 20px;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    transition: all 500ms ease;
 }
-
+.collageContent:hover{
+    background: rgb(119,53,67);
+    background: linear-gradient(148deg, rgba(119,53,67,0.923406862745098) 0%, rgba(157,78,95,0.6404936974789917) 34%, rgba(182,99,117,0.365983893557423) 65%, rgba(228,137,157,0) 100%);
+    transition: all 500ms ease;
+}
+.colgBox {
+    width: 100%;
+    aspect-ratio: 1;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    position: relative;
+}
 .collageContent h3 {
     font-size: 40px;
     color: #fff;
     margin: 0;
     line-height: 1;
 }
-
+.sfCount {
+    display: flex;
+    color: #fff;
+    align-items: center;
+    gap: 5px;
+    font-size: 40px;
+    line-height: 1;
+}
 .collageContent p {
     color: #fff;
     font-size: 16px;
@@ -248,14 +271,27 @@ section.banner video {
     left: 0;
     bottom: 0;
     width: 100%;
-    padding: 15px;
+    padding: 20px;
     background: #ebe6dddb;
     transition: all 500ms ease;
+    border-radius: 0 0 10px 10px;
 }
-.aboutBx:hover .aboutContent {
+.aboutContent img{
+    height: 40px;
+}
+.aboutContent p{
+    margin: 20px 0 0;
+    display: none;
+    font-size: 14px;
+    color: #763140;
+}
+.aboutBx:hover .aboutContent p{
+    display: block;
+}
+/* .aboutBx:hover .aboutContent {
     padding-bottom: 50px;
     transition: all 500ms ease;
-}
+} */
 .aboutContent h3 {
     font-size: 22px;
     font-weight: 700;
@@ -306,6 +342,19 @@ section.banner video {
     text-align: center;
     width: 100%;
 }
+.swiper-button-prev, .swiper-button-next{
+    background: url(../images/arrow-left.png) 0 0 no-repeat;
+    width: 50px;
+    height: 50px;
+    background-size: cover !important;
+    border: none;
+}
+.swiper-button-next{
+    background: url(../images/arrow-right.png) 0 0 no-repeat;
+}
+.swiper-button-next:after, .swiper-button-prev:after{
+    content: "" !important;
+}
 .redGrdBg .owl-item.active {
     transform: scale(0.95);
 }
@@ -345,8 +394,13 @@ section.customSec.redGrdBg .owl-carousel .owl-stage-outer {
 
 .contentBx {
     padding: 25px;
+    transform: scale(1);
+    transition: all 500ms ease;
 }
-
+.contentBx:hover {
+    transform: scale(1.07);
+    transition: all 500ms ease;
+}
 .contentBx h3 {
     display: flex;
     align-items: center;
@@ -412,10 +466,14 @@ section.customSec.redGrdBg .owl-carousel .owl-stage-outer {
 .grad{
     padding: 80px 0;
 }
-section.customSec.quickLinks {
+.quickLinks {
     background: url(../images/quick-links-bg.png) 0 0 no-repeat;
     background-size: cover;
-    padding: 80px 0;
+    padding: 110px 0;
+}
+
+.quickLinks .sectionHeading {
+    color: #2E1319;
 }
 
 .linkWrp {
@@ -428,7 +486,7 @@ section.customSec.quickLinks {
 .linkBx {
     width: 28%;
     background: #EBE6DDCC;
-    padding: 20px;
+    padding: 30px 25px;
     border-radius: 10px;
     display: flex;
     align-items: center;
@@ -465,7 +523,7 @@ section.customSec.quickLinks {
     transition: all 500ms ease;
 }
 .clgBx {
-    margin-bottom: 40px;
+    /* margin-bottom: 40px; */
 }
 
 .clgBx img {width: 100%;}
@@ -485,7 +543,7 @@ section.customSec.quickLinks {
 
 .focusContent{
     background: #763140;
-    padding: 30px;
+    padding: 45px;
     border-radius: 10px;
 }
 .focusContent h3 {
@@ -513,14 +571,13 @@ section.customSec.quickLinks {
     width: 50px;
 }
 .brand {
-    background: #d9d9d9;
-    border-radius: 10px;
     display: flex;
-    justify-content: center;
+    justify-content: start;
     padding: 10px;
 }
 .brand img {
-    height: 70px;
+    height: 55px;
+    width: auto !important;
     object-fit: contain;
 }
 .latestEventBx img {
