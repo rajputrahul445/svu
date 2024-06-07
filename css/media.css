@@ -8,10 +8,10 @@
 
 @media only screen and (max-width: 991px){
     body {
-        padding-top: 145px;
+        padding-top: 115px;
     }
     header.mainHeader.fixedHeader {
-        top: -73px;
+        top: -48px;
     }
     .mobile{display: block  !important;}
     .desktop{display: none;}
@@ -133,6 +133,7 @@
         width: calc(100%/2 - 10px);
         flex-wrap: wrap;
         gap: 10px;
+        padding: 20px;
     }
     
     .linkWrp {
@@ -141,8 +142,11 @@
     
     .linkBx h3 {
         width: 100%;
+        font-size: 16px;
     }
-    
+    .aboutContent {
+        bottom: -110px;
+    }
     .latestSlider {
         margin-bottom: 30px;
     }
@@ -223,9 +227,28 @@
     .testimonialSlider .owl-nav img {
         width: 40px;
     }
+    .colgBox {
+        margin-bottom: 30px;
+    }
+    
+    .focusContent {
+        padding: 20px;
+    }
+    
+    .focusContent p {
+        font-size: 16px;
+    }
+    .sectionHeading {
+        font-size: 32px;
+    }
 }
 @media only screen and (max-width: 767px){
-    
+    body {
+        padding-top: 145px;
+    }
+    header.mainHeader.fixedHeader {
+        top: -73px;
+    }
 }
 @media only screen and (max-width: 370px){
    
