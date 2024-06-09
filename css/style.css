@@ -125,6 +125,7 @@ input, button { outline: none !important; box-shadow: none;  }
     white-space: nowrap;
     display: flex;
     align-items: center;
+    gap: 5px;
 }
 .mainHeader #myMenu .mainNavList > li > a {
     padding: 0;
@@ -149,6 +150,54 @@ input, button { outline: none !important; box-shadow: none;  }
     right: 10px;
     top: 11px;
     color: #fff;
+}
+.menuToggleIco {
+    max-width: 10px;
+}
+.dropMenu .menuToggleIco{
+    transform: rotate(-90deg);
+    position: absolute;
+    right: 5px;
+    top: 10px;
+}
+.dropdown {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.dropMenu {
+    padding: 10px 0;
+    margin: 0;
+    list-style-type: none;
+    position: absolute;
+    left: auto;
+    top: 100%;
+    min-width: 180px;
+    display: none;
+    background: #f8ebd5;
+    box-shadow: 3px 3px 4px #0000002b;
+}
+.dropMenu li{
+    padding: 0 10px;
+}
+.dropMenu li a {
+    display: block;
+    padding: 5px 0px !important;
+    width: 100%;
+    color:#000 !important;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+.dropMenu li a:hover{
+    color: #ed5935 !important;
+} 
+.dropdown:hover >.dropMenu{
+    display: block;
+}
+.dropdown .dropdown .dropMenu{
+    left: 100% !important;
+    left: auto;
+    top: 0;
 }
 .marqueeWrp {
     padding: 20px 0 !important;

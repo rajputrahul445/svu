@@ -234,3 +234,11 @@ const colgSwiper_3 = new Swiper('.colgSwiper_3', {
 const colgSwiper_4 = new Swiper('.colgSwiper_4', {
     speed:1500,loop:true,slidesPerView:1,autoplay:{delay:6000,disableOnInteraction:false,reverseDirection:true},direction: "vertical",
 });
+
+//dropmenu-toggle for mobile
+if(window.innerWidth < 991){
+    $( ".menuToggleIco" ).click(function() {
+      $( this ).siblings('.dropMenu').toggleClass("active");
+      $( this ).toggleClass("active");
+    });
+  }
