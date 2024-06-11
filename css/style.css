@@ -185,7 +185,7 @@ input, button { outline: none !important; box-shadow: none;  }
     padding: 5px 0px !important;
     width: 100%;
     color:#000 !important;
-    font-size: 15px;
+    font-size: 14px;
     text-transform: uppercase;
 }
 .dropMenu li a:hover{
@@ -831,3 +831,143 @@ footer.footer {
     background: #111111;
     color: #fff;
 }
+
+/*========Inner-page=========*/
+.inrBanner {
+    position: relative;
+    padding: 50px 0 0;
+}
+.inrBanner img{
+    width: 100%;
+}
+section.inrBanner ul li {
+    color: #fff;
+    font-style: italic;
+    font-size: 15px;
+    font-weight: 600;
+    margin: 0 0 0 5px;
+    white-space: nowrap;
+}
+
+section.inrBanner ul li a {
+    color: #D74336;
+}
+
+.inrBanner h1 {
+    color: #fff;
+    font-size: 48px;
+    font-weight: 700;
+    margin: 30px 0 20px;
+}
+
+.inrBanner h1 span {
+    color: #fbd760;
+}
+.backOverlay{
+    background: #21050A;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 70%;
+    z-index: -1;
+} 
+.inrContentWrp {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.inrContentWrp h3 {
+    width: 100%;
+    font-size: 35px;
+    color: #D74336;
+    font-weight: 600;
+}
+
+.inrContentThumb {
+    width: 40%;
+    position: relative;
+}
+.inrContentThumb:after{
+    content: "";
+    position: absolute;
+    right: -30px;
+    top: -30px;
+    z-index: 9;
+    /* background: rgb(225,76,63);
+    background: linear-gradient(180deg, rgba(225,76,63,1) 0%, rgba(164,50,39,1) 100%); */
+    background: rgb(163,96,118);
+    background: linear-gradient(180deg, rgba(163,96,118,1) 0%, rgba(131,82,106,1) 100%);
+    width: 60px;
+    height: 60px;
+}
+.inrContentThumb img{
+    width: 100%;
+}
+.inrContent {
+    width: 60%;
+    background: #954758;
+    padding: 50px;
+    position: relative;
+}
+.inrContent:before{
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 100%;
+    top: 0;
+    left: -50px;
+    background: #954758;
+    z-index: -1;
+}
+
+.inrContent h4 {
+    font-size: 20px;
+    color: #FED760;
+    font-weight: 700;
+    margin: 0 0 20px;
+}
+
+.inrContent ul {
+    margin: 0 0 30px;
+    padding: 0;
+    list-style-type: none;
+}
+
+.inrContent ul li {
+    position: relative;
+    padding-left: 27px;
+    font-size: 18px;
+    color: #FFFCFC;
+    background: url(../images/tick-white.png) left center no-repeat;
+    background-size: 17px;
+    margin-bottom: 8px;
+}
+.inrContentWrp.liteContentWrp .inrContent{
+    background: #EBE6DD;
+}
+.inrContentWrp.liteContentWrp .inrContent:before{
+    left: auto;
+    right: -50px;
+    background: #EBE6DD;
+}
+.inrContentWrp.liteContentWrp .inrContent h4{
+    color: #954758;
+}
+.inrContentWrp.liteContentWrp .inrContent ul li{
+    color: #1F2023;
+    background: url(../images/tick-black.png) left center no-repeat;
+    background-size: 17px;
+}
+.inrContentWrp.liteContentWrp .inrContentThumb:after{
+    background: rgb(225,76,63);
+    background: linear-gradient(180deg, rgba(225,76,63,1) 0%, rgba(164,50,39,1) 100%);
+    left: -30px;
+    right: auto;
+}
+
+
+
+

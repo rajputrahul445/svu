@@ -93,6 +93,9 @@
     .dropdown .dropdown .dropMenu {
         padding-left: 20px;
     }
+    .dropMenu li a{
+        font-size: 13px;
+    }
     /* .mainHeader #myMenu .mainNavList > li > a{
         color: #fff;
     } */
@@ -260,6 +263,32 @@
     }
     .sectionHeading {
         font-size: 32px;
+    }
+    /*=========Inner-page==========*/
+    .inrContentThumb {
+        width: 100%;
+    }
+    
+    .inrContentThumb:after {
+        display: none;
+    }
+    
+    .inrContent {
+        width: 100%;
+    }
+    
+    .inrContent:before {
+        display: none;
+    }
+    section.inrBanner ul{
+        flex-wrap: wrap;
+    }
+    .inrBanner h1 {
+        font-size: 36px;
+    }
+    
+    .backOverlay {
+        height: 90%;
     }
 }
 @media only screen and (max-width: 767px){
